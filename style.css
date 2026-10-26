@@ -1,0 +1,113 @@
+/* General Page Styling */
+body {
+  background-color: #bfe5e3; /* Light mint/teal background */
+  font-family: "Lucida Sans", "Lucida Grande", "Segoe UI", sans-serif;
+  color: #555555;
+  margin: 0;
+  padding: 40px 20px;
+}
+
+/* Page Wrapper Layout */
+#wrapper {
+  background-color: #ffffff;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 220px 1fr; /* Sidebar fixed, entries fill remaining space */
+  gap: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Header Section */
+#header {
+  grid-column: 1 / -1; /* Spans across both columns */
+  background-color: #a2e6e2; /* Light teal header background */
+  padding: 10px 20px;
+  text-align: right; /* Aligns title and tagline to the right */
+}
+
+#header h1 {
+  color: #3fa19c; /* Darker teal for main title */
+  font-size: 32px;
+  font-weight: normal;
+  margin: 0;
+}
+
+#header .tagline {
+  color: #5ac5c0;
+  font-size: 16px;
+  margin: 5px 0 0 0;
+}
+
+/* Friends Sidebar Section */
+#friends {
+  background-color: #42ded7; /* Vibrant teal background */
+  border: 3px solid #209b95;  /* Deep teal border */
+  padding: 15px;
+  height: fit-content;        /* Shrinks to fit content height */
+}
+
+#friends h2 {
+  color: #209b95;
+  font-size: 24px;
+  font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+#friends ul {
+  padding-left: 20px;
+  margin: 0;
+}
+
+#friends li {
+  color: #1e7d78;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+/* Journal Entries Container */
+#entries {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Individual Entry Cards */
+.entry {
+  background-color: #f2fcfb; /* Very soft pale teal background */
+  border: 2px solid #a2e6e2;  /* Matches header color */
+  padding: 15px;
+  overflow: hidden;           /* Clears the floated image inside */
+}
+
+.entry h2 {
+  color: #3fa19c;
+  font-size: 22px;
+  font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.entry .date {
+  color: #3fa19c;
+}
+
+/* Images inside Entries */
+.entry-img {
+  float: right;             /* Pushes image to the right side of the text */
+  margin-left: 15px;
+  margin-bottom: 10px;
+  max-width: 180px;         /* Prevents images from breaking layout */
+  height: auto;
+  border: 1px solid #e0e0e0;
+}
+
+/* Entry Paragraph Text */
+.entry p {
+  margin: 0;
+  line-height: 1.5;
+  font-size: 14px;
+  color: #666666;
+}
